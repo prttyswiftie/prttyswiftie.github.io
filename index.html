@@ -1,142 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Prttyswiftie's Blog</title>
-</head>
-<br>
-<h1 style="font-size: 80px; font-style: italic;"><center>Prttyswiftie's Blog</center></h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prttyswiftie's Blog</title>
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7d4ee;
+            color: #d178ba;
+            font-family: Arial, sans-serif;
+        }
 
-<style>
-    /* Navigation bar styles */
-    .navbar {
-      display: flex;
-      justify-content: center; /* Center the menu items */
-      background-color: #d178ba; /* Background color */
-      padding: 10px;
-      gap: 15px; /* Space between menu items */
-    }
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #d178ba;
+            padding: 10px;
+            gap: 15px;
+        }
 
-    .navbar a {
-      text-decoration: none; /* Remove underline */
-      color: white; /* Text color */
-      font-style: italic;
-      padding: 8px 12px; /* Padding for clickable area */
-      border-radius: 5px; /* Rounded corners */
-      transition: background-color 0.3s; /* Smooth hover effect */
-    }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-style: italic;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-    .navbar a:hover {
-      background-color: #f7d4ee; /* Hover color */
-      color: #d178ba; /* Change text color on hover */
-    }
-</style>
+        .navbar a:hover {
+            background-color: #f7d4ee;
+            color: #d178ba;
+        }
+
+        /* Centered heading styles */
+        .centered-heading {
+            text-align: center;
+            font-size: 80px;
+            font-style: italic;
+        }
+
+        /* Image styles */
+        .resize-img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Container styles */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 0;
+            width: 100%;
+        }
+
+        .graphic {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Section styling */
+        hr {
+            border: none;
+            border-top: 15px solid #d178ba;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .weekly-report, .diary-entries {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation Menu -->
-  <div class="navbar">
-    <a href="index.html" target="_self">Home</a>
-    <a href="gallery.html" target="_self">Gallery</a>
-    
-</div>
+    <!-- Page Header -->
+    <h1 class="centered-heading">Prttyswiftie's Blog</h1>
 
-<p><center><img src="star.png" alt="img" class="resize-img"></center></p>
-<style>
-    .resize-img {
-      width: 200px; 
-      height: auto; 
-    }
-  </style>
-<h2><center><font size = 9>About Me</font size = 9></center></h2>
-<center>Hiii! I’m Val, a data-driven professional by day and a lover of all things creative by heart. With a degree in economics and two years of experience in the Office of the Chancellor at Lone Star College, I’m passionate about blending analytics with innovation. Currently, I’m diving into data analytics to take my expertise to the next level.
+    <!-- Navigation Menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
 
-When I’m off the clock, you’ll find me curating dreamy <a href="https://pin.it/2ARsSDT5i" target="https://pin.it/2ARsSDT5i">Pinterest</a> boards, flipping through the pages of a great book, or losing myself in the art of building intricate puzzles. My faith is my anchor, and I proudly serve as secretary for my church,
-<a href="https://www.ipuhcc.us/" target="https://www.ipuhcc.us/">Pentecostales de Cypress Creek</a>, where I’m inspired by community and purpose.
+    <!-- Introduction Section -->
+    <div class="content">
+        <img src="star.png" alt="Star Image" class="resize-img">
+        <h2>About Me</h2>
+        <p>
+            Hiii! I’m Val, a data-driven professional by day and a lover of all things creative by heart. With a degree in economics and two years of experience in the Office of the Chancellor at Lone Star College, I’m passionate about blending analytics with innovation. Currently, I’m diving into data analytics to take my expertise to the next level.
+        </p>
+        <p>
+            When I’m off the clock, you’ll find me curating dreamy 
+            <a href="https://pin.it/2ARsSDT5i" target="_blank">Pinterest</a> boards, flipping through the pages of a great book, or losing myself in the art of building intricate puzzles. My faith is my anchor, and I proudly serve as secretary for my church, 
+            <a href="https://www.ipuhcc.us/" target="_blank">Pentecostales de Cypress Creek</a>, where I’m inspired by community and purpose.
+        </p>
+        <p>
+            This space is where my world of ambition meets my love for the little joys in life. Stick around for stories of growth, inspiration, and finding balance in the beautiful chaos.
+        </p>
+    </div>
 
-This space is where my world of ambition meets my love for the little joys in life. Stick around for stories of growth, inspiration, and finding balance in the beautiful chaos.</center>
-<br>
-<hr color=#d178ba size=15>
-<p><center><img src="nara.png" alt="img" class="resize-img"></center></p>
-<h2><center><font size = 9>Weekly Report</font size = 9></center></h2>
-<i><center><b>Februrary 11, 2025</b><center></i>
-<br>
-<center><b>Reading:</b> 1Q84 <i>Haruki Murakami</i></i></center>
-<center><b>Eating:</b> Tomato Basil Soup</center>
-<center><b>Playing:</b> Mariah the Scientist</center>
-<center><b>Obsessing:</b> Yoshitomo Nara</center>
-<center><b>Recommending:</b> Hunger Games</center>
-<center><b>Treating:</b> Afternoon Strolls</center>
-<hr color=#d178ba size=15>
-<h2><center><font size = 9>Diary Entries</font size = 9></center></h2>
-<br>
-<i>February 11, 2025:</i> Omg, this is my first entry. I am obsessed with this page, I started coding it this morning and I am so proud of how it turned out. Hopefully I can use this to just write little updates about the things that are happening in my life or things that I am fascinated by. I underestimated how much I'd love all these courses I am taking, I love learning to do nerdy stuff like this. Ermm, but yea this is officially my first diary entry and hopefully I stay on top of this page. 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<center><i>Until next time, xoxo.</i></center>
-<center><i>-Val</i></center>
-<hr color=#d178ba size=15>
+    <hr>
 
-<div class="container">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
-</div>
+    <!-- Weekly Report Section -->
+    <div class="weekly-report">
+        <img src="nara.png" alt="Nara Image" class="resize-img">
+        <h2>Weekly Report</h2>
+        <p><b>February 11, 2025</b></p>
+        <p><b>Reading:</b> 1Q84 by <i>Haruki Murakami</i></p>
+        <p><b>Eating:</b> Tomato Basil Soup</p>
+        <p><b>Playing:</b> Mariah the Scientist</p>
+        <p><b>Obsessing:</b> Yoshitomo Nara</p>
+        <p><b>Recommending:</b> Hunger Games</p>
+        <p><b>Treating:</b> Afternoon Strolls</p>
+    </div>
 
-<style>
-  /* General body styles */
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    <hr>
 
-  /* Container styles */
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
-    gap: 0; /* No gap between items */
-    width: 100%; /* Ensure container spans full width */
-  }
+    <!-- Diary Entries Section -->
+    <div class="diary-entries">
+        <h2>Diary Entries</h2>
+        <p><i>February 11, 2025:</i> Omg, this is my first entry. I am obsessed with this page. I started coding it this morning, and I am so proud of how it turned out. Hopefully, I can use this to just write little updates about the things happening in my life or things I am fascinated by. I underestimated how much I'd love all these courses I’m taking—I love learning to do nerdy stuff like this. Anyway, this is officially my first diary entry, and I hope I stay on top of this page.</p>
+        <p><i>Until next time, xoxo.</i></p>
+        <p><i>- Val</i></p>
+    </div>
 
-  /* Image styles */
-  .graphic {
-    width: 100%; /* Makes images responsive */
-    height: auto; /* Maintains aspect ratio */
-  }
+    <hr>
 
-  /* Horizontal rule (hr) styling for consistency */
-  hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
-    width: 100%;
-  }
+    <!-- Graphic Section -->
+    <div class="container">
+        <img src="stars.gif" alt="Graphic 1" class="graphic">
+        <img src="stars.gif" alt="Graphic 2" class="graphic">
+        <img src="stars.gif" alt="Graphic 3" class="graphic">
+        <img src="stars.gif" alt="Graphic 4" class="graphic">
+    </div>
 
-  /* Text alignment */
-  p {
-    text-align: center;
-    margin: 10px;
-  }
-</style>
-
-<!-- Example text and horizontal rule for testing -->
-<p style="color: #f7d4ee;">This text spans the width of the page.</p>
-<hr style="border: none; border-top: 1px solid #f7d4ee;">
-
-<body bgcolor=#f7d4ee text=#d178ba ></body> 
+    <div class="footer">
+        <p style="color: #f7d4ee;">This text spans the width of the page.</p>
+        <hr>
+    </div>
+</body>
 </html>
+

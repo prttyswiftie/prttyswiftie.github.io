@@ -61,6 +61,11 @@ This space is where my world of ambition meets my love for the little joys in li
   <img src="stars.gif" alt="img" class="graphic">
   <img src="stars.gif" alt="img" class="graphic">
   <img src="stars.gif" alt="img" class="graphic">
+<div class="container">
+  <img src="stars.gif" alt="img" class="graphic">
+  <img src="stars.gif" alt="img" class="graphic">
+  <img src="stars.gif" alt="img" class="graphic">
+  <img src="stars.gif" alt="img" class="graphic">
 </div>
 
 <style>
@@ -74,16 +79,35 @@ This space is where my world of ambition meets my love for the little joys in li
   /* Container styles */
   .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
     gap: 0; /* No gap between items */
+    width: 100%; /* Ensure container spans full width */
   }
 
   /* Image styles */
   .graphic {
-    width: 100%;
+    width: 100%; /* Makes images responsive */
     height: auto; /* Maintains aspect ratio */
   }
+
+  /* Horizontal rule (hr) styling for consistency */
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  /* Text alignment */
+  p {
+    text-align: center;
+    margin: 10px;
+  }
 </style>
+
+<!-- Example text and horizontal rule for testing -->
+<p>This text spans the width of the page.</p>
+<hr>
 
 <body bgcolor=#f7d4ee text=#d178ba ></body> 
 </html>

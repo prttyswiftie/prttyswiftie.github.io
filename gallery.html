@@ -7,12 +7,12 @@
   <style>
     /* General body styles */
     body {
-      margin-top: 20px;
+      margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       color: #333;
-
+      text-align: center; /* Centers all text */
     }
 
     /* Navigation bar styles */
@@ -52,7 +52,7 @@
     }
 
     .gallery img {
-      width: 50%;
+      width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,21 @@
     h1 {
       text-align: center;
       color: #d178ba;
+      margin-bottom: 10px;
+    }
+
+    /* Subheading styles */
+    .subheading {
+      font-size: 1.2em;
+      color: #666;
       margin-bottom: 20px;
+    }
+
+    /* Image captions */
+    .caption {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #555;
     }
   </style>
 </head>
@@ -76,17 +90,22 @@
   <!-- Navigation Menu -->
   <div class="navbar">
     <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="gallery.html">Gallery</a>
-
+    <a href="contact.html">Contact</a>
   </div>
 
   <div class="container">
     <h1><i>Image Gallery</i></h1>
-    This is a little photo album with updates! Enjoy!! <3
+    <p class="subheading">This is a little photo album with updates! Enjoy!! <3</p>
     <div class="gallery">
-      <center><img src="2024_2_11img.jpeg" alt="Image 1"></center>
+      <div>
+        <img src="2024_2_11img.jpeg" alt="Image 1">
+        <p class="caption"><i>working on the page >.<</i>.</p>
+      </div>
     </div>
-    Building the page >.<
   </div>
 </body>
 </html>
+

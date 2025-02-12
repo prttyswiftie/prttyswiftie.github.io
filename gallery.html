@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <style>
-    /* General body styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Times New Roman, serif;
-      background-color: #f7d4ee;
-      color: #d178ba;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prttyswiftie's Blog</title>
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7d4ee;
+            color: #d178ba;
+            font-family: "Times New Roman", serif;
+        }
 
-    /* Navigation bar styles */
-    .navbar {
-      display: flex;
-      justify-content: center;
-      background-color: #d178ba;
-      width: 100%; /* Full width */
-      padding: 10px;
-      gap: 15px;
-    }
+        /* Header and subheading styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
 
-    .navbar a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
+        .header h1 {
+            font-size: 3rem;
+            font-style: italic;
+            color: #d178ba;
+        }
 
-    .navbar a:hover {
-      background-color: #f7d4ee;
-      color: #d178ba;
-    }
+        .header p {
+            font-size: 1.2rem;
+            color: #d178ba;
+            margin: 10px 0;
+        }
 
-    /* Page container */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #d178ba;
+            padding: 10px;
+            gap: 15px;
+        }
 
-    /* Gallery grid styles */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-    }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-style: italic;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-    .gallery img {
-      width: 50%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        .navbar a:hover {
+            background-color: #f7d4ee;
+            color: #d178ba;
+        }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
+        /* Gallery styles */
+        .gallery {
+            text-align: center;
+            margin: 20px auto;
+        }
 
-    /* Page title */
-    h1 {
-      font-size: 2em;
-      color: #d178ba;
-      margin-bottom: 10px;
-    }
+        .gallery img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    /* Subheading styles */
-    .subheading {
-      font-size: 1.2em;
-      color: #d178ba;
-      margin-bottom: 20px;
-    }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
 
-    /* Image captions */
-    .caption {
-      margin-top: 10px;
-      font-size: 1em;
-      color: #d178ba;
-    }
-  </style>
+        .gallery .caption {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #d178ba;
+        }
+
+        /* Footer styles */
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            justify-items: center;
+        }
+
+        .footer img {
+            width: 100px;
+            height: auto;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #d178ba;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <div class = container>
-   <h1 style="font-size: 80px; font-style: italic;">Image Gallery</h1>
-   <p class="subheading" style="font-size: 20px">This is a little photo album with updates! Enjoy!! <3</p>
-  </div>
-  
-  <!-- Navigation Menu -->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-  </div>
-
-  <div class="container">
-    <div class="gallery">
-      <div>
-        <img src="2024_2_11img.jpeg" alt="Image 1">
-        <p class="caption"><i>this is me working on the page >.<</i></p>
-        <hr color="#d178ba">
-      </div>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Image Gallery</h1>
+        <p>This is a little photo album with updates! Enjoy!! <3</p>
     </div>
-  </div>
+    
+    <!-- Navigation Menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container">
+        <div class="gallery">
+            <img src="2024_2_11img.jpeg" alt="Image 1">
+            <p class="caption"><i>this is me working on the page >.<</i></p>
+        </div>
+        <hr>
+    </div>
+    
+    <!-- Footer Section -->
+    <div class="footer">
+        <img src="stars.gif" alt="Graphic 1" class="graphic">
+        <img src="stars.gif" alt="Graphic 2" class="graphic">
+        <img src="stars.gif" alt="Graphic 3" class="graphic">
+        <img src="stars.gif" alt="Graphic 4" class="graphic">
+        <img src="stars.gif" alt="Graphic 5" class="graphic">
+        <img src="stars.gif" alt="Graphic 6" class="graphic">
+    </div>
 </body>
 </html>
-
-

@@ -120,13 +120,39 @@
                 gap: 10px;
             }
         }
+
+        .gallery img{
+	        width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+       }
+
+         .subheading {
+            font-size: 1.2em;
+            color: #d178ba;
+            margin-bottom: 20px;
+        }
+ 
+        .caption {
+           margin-top: 10px;
+           font-size: 1em;
+           color: #d178ba;
+
+
     </style>
 </head>
 <body>
     <!-- Page Header -->
     <h1 class="centered-heading">Image Gallery</h1>
     
-    <div style="font-size: 40px">
+    <div class="subheading">
     This is a little photo album with updates! Enjoy :)
     </div>
 
@@ -134,6 +160,14 @@
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="gallery">
+      <div>
+        <img src="2024_2_11img.jpeg" alt="Image 1">
+        <p class="caption"><i>this is me working on the page >.<</i></p>
+        <hr color="#d178ba">
+      </div>
     </div>
 
     <hr>

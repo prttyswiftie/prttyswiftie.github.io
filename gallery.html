@@ -55,7 +55,7 @@
         }
 
         /* Container styles */
-        .container {
+        .footer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 10px;
@@ -97,11 +97,6 @@
             padding: 0 15px;
         }
 
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-        }
-
         /* Responsive design */
         @media (max-width: 600px) {
             .centered-heading {
@@ -112,7 +107,7 @@
                 width: 150px;
             }
 
-            .footer {
+            .container {
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             }
 
@@ -124,38 +119,23 @@
                 flex-wrap: wrap;
                 gap: 10px;
             }
-            .container {
-               display: grid;
-               grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-               gap: 10px;
-               padding: 10px;
-	    }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <h1>Image Gallery</h1>
-        <p>This is a little photo album with updates! Enjoy!! <3</p>
-    </div>
-    
+    <!-- Page Header -->
+    <h1 class="centered-heading">Image Gallery</h1>
+    <h2 class="centered-heading">This is a little photo album with updates! Enjoy :)</h2>
+
     <!-- Navigation Menu -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
     </div>
 
-    <!-- Gallery Section -->
-    <div class="container">
-        <div class="gallery">
-            <img src="2024_2_11img.jpeg" alt="Image 1">
-            <p class="caption"><i>this is me working on the page >.<</i></p>
-        </div>
-        <hr>
-    </div>
-    
-    <!-- Footer Section -->
+    <hr>
+
+    <!-- Graphic Section -->
     <div class="footer">
         <img src="stars.gif" alt="Graphic 1" class="graphic">
         <img src="stars.gif" alt="Graphic 2" class="graphic">
@@ -164,5 +144,6 @@
         <img src="stars.gif" alt="Graphic 5" class="graphic">
         <img src="stars.gif" alt="Graphic 6" class="graphic">
     </div>
+    
 </body>
-</html>
+</html> 

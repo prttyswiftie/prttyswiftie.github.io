@@ -61,12 +61,10 @@ This space is where my world of ambition meets my love for the little joys in li
   <img src="stars.gif" alt="img" class="graphic">
   <img src="stars.gif" alt="img" class="graphic">
   <img src="stars.gif" alt="img" class="graphic">
-<div class="container">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
-  <img src="stars.gif" alt="img" class="graphic">
 </div>
+
+<p>This text spans the width of the page and adapts to the screen size.</p>
+<hr>
 
 <style>
   /* General body styles */
@@ -90,24 +88,33 @@ This space is where my world of ambition meets my love for the little joys in li
     height: auto; /* Maintains aspect ratio */
   }
 
-  /* Horizontal rule (hr) styling for consistency */
+  /* Horizontal rule (hr) styling */
   hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 20px 0;
-    width: 100%;
+    width: 100%; /* Full width for horizontal rule */
   }
 
-  /* Text alignment */
+  /* Text alignment and wrapping */
   p {
     text-align: center;
     margin: 10px;
+    padding: 0 10px; /* Add padding to prevent text from hitting the edges */
+    word-wrap: break-word; /* Ensure long words or URLs break to fit */
+  }
+
+  /* Ensure mobile compatibility */
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller columns on mobile */
+    }
+    p {
+      font-size: 14px; /* Smaller text for better readability */
+    }
   }
 </style>
 
-<!-- Example text and horizontal rule for testing -->
-<p>This text spans the width of the page.</p>
-<hr>
 
 <body bgcolor=#f7d4ee text=#d178ba ></body> 
 </html>

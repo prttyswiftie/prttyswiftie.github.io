@@ -13,6 +13,11 @@
             background-color: #f7d4ee;
             color: #d178ba;
             font-family: Times-New-Roman;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         /* Navigation bar styles */
@@ -22,6 +27,7 @@
             background-color: #d178ba;
             padding: 10px;
             gap: 15px;
+            width: 100%;
         }
 
         .navbar a {
@@ -46,47 +52,41 @@
             margin: 20px 0;
         }
 
-        /* Container styles */
+        /* Gallery image */
+        .gallery img {
+            width: 60%; /* Adjust image size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #d178ba;
+        }
+
+        /* Footer Graphic Section */
         .footer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 10px;
             padding: 10px;
+            width: 80%;
         }
 
-        .graphic {
+        .footer img {
             width: 100%;
             height: auto;
-        }
-
-        /* Section styling */
-        hr {
-            border: none;
-            border-top: 5px solid #d178ba;
-            margin: 20px 0;
-        }
-
-        p {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2em;
-        }
-
-        .content {
-            text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 0 15px;
-        }
-
-        .weekly-report, .diary-entries {
-            text-align: center;
-            margin: 20px auto;
-            padding: 0 15px;
         }
 
         /* Responsive design */
@@ -95,51 +95,23 @@
                 font-size: 40px;
             }
 
-            .container {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            }
-
-            .content, .weekly-report, .diary-entries {
-                padding: 0 10px;
-            }
-
             .navbar {
                 flex-wrap: wrap;
                 gap: 10px;
             }
 
-        .gallery img {
-   	       width: 20%;
-               height: auto;
-               border-radius: 8px;
-               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-               transition: transform 0.3s ease, box-shadow 0.3s ease;
+            .footer {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+            }
         }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-       }
-
-         .subheading {
-            font-size: 60px;
-            text-align: center;
-            color: #d178ba;
-            margin-bottom: 20px;
-        }
- 
-        .caption {
-           margin-top: 20px;
-           font-size: 1em;
-           color: #d178ba;
-
-
     </style>
 </head>
 <body>
     <hr>
     <!-- Page Header -->
     <h1 class="centered-heading">Image Gallery</h1>
+
     <!-- Navigation Menu -->
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -147,13 +119,13 @@
     </div>
 
     <br>
-	
+    
     <div class="subheading">
-       <center>This is a little photo album with updates! Enjoy :)</center>
+        <center>This is a little photo album with updates! Enjoy :)</center>
     </div>
-	
+
     <br>
-	
+    
     <div class="gallery">
         <img src="2024_2_11img.jpeg" alt="Image 1">
         <p class="caption"><i>this is me working on the page >.<</i></p>
@@ -162,13 +134,16 @@
 
     <!-- Graphic Section -->
     <div class="footer">
-        <img src="stars.gif" alt="Graphic 1" class="graphic">
-        <img src="stars.gif" alt="Graphic 2" class="graphic">
-        <img src="stars.gif" alt="Graphic 3" class="graphic">
-        <img src="stars.gif" alt="Graphic 4" class="graphic">
-        <img src="stars.gif" alt="Graphic 5" class="graphic">
-        <img src="stars.gif" alt="Graphic 6" class="graphic">
+        <img src="stars.gif" alt="Graphic 1">
+        <img src="stars.gif" alt="Graphic 2">
+        <img src="stars.gif" alt="Graphic 3">
+        <img src="stars.gif" alt="Graphic 4">
+        <img src="stars.gif" alt="Graphic 5">
+        <img src="stars.gif" alt="Graphic 6">
     </div>
+</body>
+</html>
+
     
 </body>
 </html> 
